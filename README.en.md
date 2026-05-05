@@ -20,6 +20,16 @@ When the work timer reaches its limit, the app raises a full-screen transparent 
 - built-in preset schedules plus custom work/rest durations
 - local media assets with no cloud processing requirement
 
+## Screenshots and Demo
+
+You can add the following here later:
+
+- one screenshot of the app in its normal working state
+- one screenshot of the cat overlay during a break
+- one short demo GIF or mp4
+
+A practical approach is to store preview media under `assets/preview/` or upload them via GitHub Releases, Issues, or Discussions and then reference them from the README.
+
 ## Platform Status
 
 - macOS: primary tested platform
@@ -251,6 +261,5 @@ Performance logs, when manually enabled from the tray menu, are written to:
 
 If you want to improve the repository presentation later, consider adding:
 
-- README screenshots or a short demo clip
 - a polished first GitHub Release note
 - updated Windows compatibility notes after real hardware testing

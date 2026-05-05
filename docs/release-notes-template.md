@@ -62,6 +62,20 @@ npm run dist:win
 - `docs/manual-test-checklist.md`
 ```
 
+### 当前建议上传到 GitHub Release 的 macOS 文件
+
+建议上传：
+
+- `release/FatCat Guardian-0.1.0-arm64.dmg`
+- `release/FatCat Guardian-0.1.0-arm64.zip`
+
+不建议上传：
+
+- `*.blockmap`
+- `builder-debug.yml`
+- `builder-effective-config.yaml`
+- `release/mac-arm64/` 目录本身
+
 ## 模板：Windows 实验性测试包
 
 ```md

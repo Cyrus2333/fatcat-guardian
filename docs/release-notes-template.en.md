@@ -62,6 +62,20 @@ Detailed install notes:
 - `docs/manual-test-checklist.md`
 ```
 
+### macOS Files Currently Recommended For GitHub Release Upload
+
+Recommended:
+
+- `release/FatCat Guardian-0.1.0-arm64.dmg`
+- `release/FatCat Guardian-0.1.0-arm64.zip`
+
+Not recommended:
+
+- `*.blockmap`
+- `builder-debug.yml`
+- `builder-effective-config.yaml`
+- the `release/mac-arm64/` directory itself
+
 ## Template: Windows Experimental Test Build
 
 ```md
