@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FatCat Guardian | 当普通提醒已经管不住你</title>
+    <meta
+      name="description"
+      content="FatCat Guardian 是一个托盘常驻的桌面休息提醒器。时间一到，不是弹个通知，而是直接让一只肥猫霸占你的屏幕。"
+    />
+    <meta name="theme-color" content="#19130f" />
+    <meta property="og:title" content="FatCat Guardian" />
+    <meta
+      property="og:description"
+      content="当普通提醒已经管不住你，就让一只肥猫直接挡住你的屏幕。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/icon.png" />
+    <link rel="icon" type="image/png" href="./assets/icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="FatCat Guardian 首页" data-scroll-top>
+          <img src="./assets/icon.png" alt="" />
+          <span>FatCat Guardian</span>
+        </a>
+        <nav class="topnav" aria-label="站点导航">
+          <a href="#features">核心特性</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">DESKTOP BREAK REMINDER, REBUILT BY A CAT</p>
+            <h1>肥猫守护你！</h1>
+            <p class="lede">
+              屏幕看太久，猫咪就会出来霸占屏幕，让你不得不先休息一会噢！
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/Cyrus2333/fatcat-guardian" target="_blank" rel="noreferrer">
+                查看 GitHub 仓库
+              </a>
+              <button class="button button-secondary" type="button" data-contact-open>联系我</button>
+            </div>
+
+            <dl class="hero-metrics" aria-label="产品摘要">
+              <div>
+                <dt>提醒方式</dt>
+                <dd>猫咪霸占屏幕</dd>
+              </div>
+              <div>
+                <dt>运行模式</dt>
+                <dd>常驻托盘角落</dd>
+              </div>
+              <div>
+                <dt>适用人群</dt>
+                <dd>不自律的大人</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-stage" aria-label="产品演示">
+            <div class="stage-card stage-card-video">
+              <div class="stage-card-head">
+                <span class="stage-dot"></span>
+                <span class="stage-dot"></span>
+                <span class="stage-dot"></span>
+                <p>blocking overlay preview</p>
+              </div>
+              <video
+                class="cat-demo"
+                src="./assets/neko1.webm"
+                poster="./assets/icon.png"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+
+            <div class="stage-card stage-card-note">
+              <p class="mini-label">设计原则</p>
+              <p>
+                “不要提醒我该休息了，直接让我没法继续工作。”
+              </p>
+            </div>
+
+            <div class="stage-card stage-card-ui">
+              <div class="ui-chip-row">
+                <span class="ui-chip">25 / 5</span>
+                <span class="ui-chip">50 / 10</span>
+                <span class="ui-chip">Custom</span>
+              </div>
+              <div class="ui-panel">
+                <div>
+                  <p class="mini-label">Session Status</p>
+                  <h2>Rest starts in 00:47</h2>
+                </div>
+                <div class="ui-divider"></div>
+                <ul>
+                  <li>多显示器同步覆盖</li>
+                  <li>支持自定义工作 / 休息时长</li>
+                  <li>内置紧急跳过开关</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="feature-section">
+          <div class="section-head">
+            <p class="section-tag">Core Features</p>
+            <h2>安心休息。</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>托盘优先</h3>
+              <p>平时安静驻留，到点再出现。</p>
+            </article>
+            <article class="feature-card">
+              <h3>全屏透明遮罩</h3>
+              <p>不是弹窗，是直接盖住屏幕。</p>
+            </article>
+            <article class="feature-card">
+              <h3>双番茄与自定义时长</h3>
+              <p>支持 25/5、50/10 和自定义时长。</p>
+            </article>
+            <article class="feature-card">
+              <h3>多显示器支持</h3>
+              <p>多屏同时覆盖。</p>
+            </article>
+            <article class="feature-card">
+              <h3>本地素材运行</h3>
+              <p>素材本地运行，不依赖在线服务。</p>
+            </article>
+            <article class="feature-card">
+              <h3>给开源发布准备好了</h3>
+              <p>桌面应用和官网都能直接从仓库发布。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="platform" class="platform-section">
+          <div class="section-head">
+            <p class="section-tag">Platform Status</p>
+            <h2>双系统支持。</h2>
+          </div>
+
+          <div class="platform-grid">
+            <article class="platform-card">
+              <h3>macOS</h3>
+              <p>当前主要验证平台。</p>
+            </article>
+            <article class="platform-card">
+              <h3>Windows</h3>
+              <p>已接入打包，仍需实机验证。</p>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <p>FatCat Guardian. Built for people who can ignore every normal reminder.</p>
+        <p>
+          Credits:
+          <a href="https://github.com/zokuzoku/cat-gatekeeper" target="_blank" rel="noreferrer">cat-gatekeeper</a>
+          for the original idea and cat assets.
+        </p>
+        <p>© <span id="year"></span> Huang Jingye</p>
+      </footer>
+    </div>
+
+    <div class="contact-modal" data-contact-modal hidden>
+      <div class="contact-backdrop" data-contact-close></div>
+      <section class="contact-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+        <button class="contact-close" type="button" aria-label="关闭弹窗" data-contact-close>×</button>
+        <p class="section-tag">Contact</p>
+        <h2 id="contact-title">微信联系我</h2>
+        <p class="contact-copy">扫一扫二维码，加我微信。</p>
+        <img class="contact-image" src="./assets/wechat-qr.jpg" alt="微信二维码" />
+      </section>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

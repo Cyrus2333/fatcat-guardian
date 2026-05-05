@@ -11,7 +11,9 @@
   "scripts": {
     "dev": "node ./node_modules/electron/cli.js ./electron/main.cjs",
     "start": "node ./node_modules/electron/cli.js ./electron/main.cjs",
+    "site:dev": "node ./scripts/serve-site.mjs",
     "check": "node --check electron/main.cjs && node --check electron/preload.cjs && node --check electron/overlay.js && node --check electron/settings.js",
+    "site:check": "node --check ./site/main.js && node --check ./scripts/serve-site.mjs",
     "dist": "electron-builder",
     "dist:mac": "electron-builder --mac",
     "dist:win": "electron-builder --win",
