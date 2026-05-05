@@ -1,16 +1,18 @@
-# Unsigned macOS Test Build Guide
+# macOS 未签名测试包说明
 
-This guide is for small-scale testing only.
+[English Version](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-mac-testing.en.md)
 
-If you share a macOS build of FatCat Guardian without Apple signing and notarization:
+这份说明仅适用于小范围测试。
 
-- macOS will usually warn that the app cannot be verified
-- testers will need to manually allow the app
-- this should only be used by people who trust the source
+如果你分享的是一个没有 Apple 签名、也没有 notarization 的 FatCat Guardian macOS 包：
 
-## Build the Test Package
+- macOS 通常会提示无法验证开发者身份
+- 测试者需要手动允许打开
+- 只建议在信任源码来源的前提下安装
 
-From the project root:
+## 如何构建测试包
+
+在项目根目录执行：
 
 ```bash
 npm install
@@ -18,38 +20,38 @@ npm run check
 npm run dist:mac
 ```
 
-Expected outputs:
+预期产物：
 
 - `release/FatCat Guardian-<version>-arm64.dmg`
-- `release/FatCat Guardian-<version>-arm64-mac.zip`
+- `release/FatCat Guardian-<version>-arm64.zip`
 
-For tester distribution, the `.dmg` is usually the most convenient artifact.
+对测试用户来说，通常 `.dmg` 更方便分发和安装。
 
-## Tester Install Steps
+## 测试者安装步骤
 
-1. Download the `.dmg`.
-2. Drag `FatCat Guardian.app` into `Applications`.
-3. Try opening the app once.
-4. If macOS blocks it, open `System Settings > Privacy & Security`.
-5. Scroll to the security section and click `Open Anyway`.
-6. Confirm the warning dialog and open the app again.
+1. 下载 `.dmg` 文件。
+2. 将 `FatCat Guardian.app` 拖到 `Applications`。
+3. 尝试第一次打开应用。
+4. 如果被系统拦截，打开 `System Settings > Privacy & Security`。
+5. 在安全提示区域点击 `Open Anyway`。
+6. 再次确认弹窗并重新打开应用。
 
-Apple documents this override flow here:
+Apple 关于这类手动放行流程的官方文档：
 
 - [Open a Mac app from an unknown developer](https://support.apple.com/en-euro/guide/mac-help/mh40616/mac)
 - [Safely open apps on your Mac](https://support.apple.com/en-lamr/102445)
 
-## Suggested Release Note
+## 建议的 Release 说明文案
 
-Use wording like this when attaching a test build to a release:
+发布测试包时，可以使用类似下面的说明：
 
 > Test build only. This package is unsigned and not notarized, so macOS may block it on first launch. Install it only if you trust the source, then allow it manually in Privacy & Security if needed.
 
-## What Not To Promise
+## 不建议承诺的内容
 
-For unsigned test builds, avoid claiming:
+对于 unsigned 测试包，不建议对外宣称：
 
-- one-click install
-- no system warnings
-- polished public distribution
-- malware-reviewed Apple notarization
+- 一键无感安装
+- 不会出现系统安全提示
+- 已适合面向普通大众正式分发
+- 已经过 Apple 恶意软件审查

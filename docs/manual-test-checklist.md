@@ -1,40 +1,42 @@
-# Manual Test Checklist
+# 手动测试清单
 
-Use this checklist before publishing a source release or attaching new test builds.
+[English Version](/Users/huangjingye/Documents/project/fatcat-guardian/docs/manual-test-checklist.en.md)
 
-## Core Session Logic
+在公开源码仓库，或上传新的测试构建包之前，建议按这份清单手动确认一遍。
 
-1. Launch the app and confirm the tray icon appears.
-2. Confirm the active schedule mode is the expected one.
-3. Let a work session run until the reminder triggers.
-4. Confirm the countdown changes correctly during the blocking and rest phases.
-5. Press `Esc` and confirm the current break is skipped cleanly.
+## 核心会话逻辑
 
-## Pause and Resume Rules
+1. 启动应用，确认托盘图标正常出现。
+2. 确认当前生效的工作/休息模式符合预期。
+3. 让工作计时自然运行到提醒触发。
+4. 确认进场阶段与休息阶段的倒计时都在正常变化。
+5. 按下 `Esc`，确认可以正常跳过当前休息阶段。
 
-1. Lock the screen and confirm the session pauses.
-2. Resume or unlock and confirm the session continues.
-3. Put the machine to sleep and confirm the session pauses.
-4. Wake the machine and confirm the session resumes cleanly.
+## 暂停与恢复规则
 
-## Overlay Behavior
+1. 锁屏，确认当前会话暂停。
+2. 解锁或恢复后，确认会话继续。
+3. 让设备进入睡眠，确认会话暂停。
+4. 唤醒设备后，确认会话恢复正常。
 
-1. Confirm the overlay is above normal app windows.
-2. Confirm the cat animation plays without a black background.
-3. Confirm the countdown card stays fully inside the screen bounds.
-4. Confirm the transition from intro animation to loop animation does not visibly break.
+## 遮罩表现
 
-## Multi-Monitor Behavior
+1. 确认遮罩窗口位于普通应用窗口之上。
+2. 确认猫咪动画播放时没有黑色背景。
+3. 确认倒计时卡片完整显示在屏幕可视区域内。
+4. 确认进场动画切换到循环动画时没有明显断裂或闪烁。
 
-1. Trigger a break with all displays connected.
-2. Confirm every display is covered.
-3. Connect or enable a new display during a break.
-4. Confirm the new display also becomes covered.
-5. Disconnect a display and confirm the app continues without errors.
+## 多显示器行为
 
-## Packaging Sanity Check
+1. 在多屏都连接的情况下触发一次休息。
+2. 确认每一个屏幕都被覆盖。
+3. 在休息中途新增或启用一个显示器。
+4. 确认新显示器也会被覆盖。
+5. 拔掉一个显示器，确认应用继续正常运行且没有明显异常。
 
-1. Rebuild the release artifacts.
-2. Confirm the output files are present in `release/`.
-3. Confirm no obsolete large media files were accidentally reintroduced into `public/cats/`.
-4. Verify the package size is broadly in the expected range for the current platform.
+## 打包检查
+
+1. 重新构建当前平台的发布产物。
+2. 确认 `release/` 中生成了预期文件。
+3. 确认 `public/cats/` 里没有误带回历史的大体积无用素材。
+4. 确认当前安装包体积大致符合预期。

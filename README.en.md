@@ -25,6 +25,18 @@ When the work timer reaches its limit, the app raises a full-screen transparent 
 - macOS: primary tested platform
 - Windows: packaging is scaffolded, runtime verification is still recommended
 
+## Inspiration and Asset Credits
+
+The core idea behind this project, as well as the cat media assets, comes from another open-source project:
+
+- Author: `zokuzoku`
+- Repository: [cat-gatekeeper](https://github.com/zokuzoku/cat-gatekeeper)
+- Project page: [zokuzoku.github.io/cat-gatekeeper](https://zokuzoku.github.io/cat-gatekeeper/)
+
+FatCat Guardian is my Electron-based desktop reinterpretation of that idea and those assets. The goal here is to let the cat move beyond the browser and take over the full native desktop screen as a real desktop break reminder.
+
+Huge thanks to the original author for the excellent concept and for open-sourcing both the project and the assets. If you reuse or reference the related work, please make sure you follow the applicable open-source license terms and give proper attribution to the original author.
+
 ## Quick Start
 
 Requirements:

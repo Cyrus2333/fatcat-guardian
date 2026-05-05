@@ -1,88 +1,90 @@
-# Release Notes Templates
+# Release 文案模板
 
-Use the following templates when publishing the repository or attaching test builds to GitHub Releases.
+[English Version](/Users/huangjingye/Documents/project/fatcat-guardian/docs/release-notes-template.en.md)
 
-## Template: Source Release
+以下模板可直接用于 GitHub Releases，或作为发布说明的基础文案。
+
+## 模板：源码发布
 
 ```md
 ## FatCat Guardian
 
-FatCat Guardian is a tray-first desktop break reminder that blocks the screen with a cat when it is time to rest.
+FatCat Guardian 是一个托盘常驻的桌面休息提醒应用。到达休息时间后，它会直接让一只猫咪“霸占”你的屏幕。
 
-### Current status
+### 当前状态
 
-- macOS is the primary tested platform
-- Windows packaging is scaffolded and needs more runtime validation
-- the project is open source under GPL-3.0-only
+- macOS 是当前主要验证平台
+- Windows 已完成打包配置，但仍需要更多运行验证
+- 项目采用 GPL-3.0-only 开源
 
-### Local development
+### 本地开发
 
 ```bash
 npm install
 npm run dev
 ```
 
-### Packaging
+### 打包
 
 ```bash
 npm run dist:mac
 npm run dist:win
 ```
 
-See the repository README for setup details and testing notes.
+更多细节请查看仓库 README 与 `docs/` 目录中的测试说明。
 ```
 
-## Template: macOS Unsigned Test Build
+## 模板：macOS 未签名测试包
 
 ```md
-## macOS Test Build
+## macOS 测试构建包
 
-This is an unsigned and unnotarized macOS test build of FatCat Guardian.
+这是 FatCat Guardian 的一个未签名、未 notarize 的 macOS 测试版本。
 
-### Important
+### 注意事项
 
-- macOS may block the app on first launch
-- only install it if you trust the source
-- if blocked, allow it manually in Privacy & Security settings
+- macOS 首次打开时可能会拦截
+- 请仅在信任源码来源的前提下安装
+- 如果被系统拦截，请到 Privacy & Security 中手动允许
 
-### What to test
+### 建议测试内容
 
-- tray icon appears correctly
-- reminder triggers after the expected work interval
-- cat overlay plays normally
-- `Esc` skips the current break
-- multi-monitor coverage works as expected
-- lock or sleep pauses the session correctly
+- 托盘图标是否正常显示
+- 是否会在预期工作时长后触发提醒
+- 猫咪遮罩动画是否播放正常
+- `Esc` 是否可以跳过当前休息
+- 多显示器覆盖是否正常
+- 锁屏、休眠后是否正确暂停与恢复
 
-Detailed install notes:
+详细说明：
 
 - `docs/unsigned-mac-testing.md`
 - `docs/manual-test-checklist.md`
 ```
 
-## Template: Windows Experimental Test Build
+## 模板：Windows 实验性测试包
 
 ```md
-## Windows Experimental Test Build
+## Windows 实验性测试构建包
 
-This is an unsigned Windows test build of FatCat Guardian.
+这是 FatCat Guardian 的一个未签名 Windows 测试版本。
 
-### Important
+### 注意事项
 
-- Windows Defender SmartScreen may warn on first launch
-- this build is experimental
-- install it only if you trust the source
+- Windows Defender SmartScreen 可能在首次运行时给出警告
+- 这是实验性构建包
+- 请仅在信任源码来源的前提下安装
 
-### What to test
+### 建议测试内容
 
-- tray icon appearance
-- overlay transparency
-- full-screen and always-on-top behavior
-- taskbar coverage
-- multi-monitor coverage
-- lock and sleep recovery
+- 托盘图标显示
+- 遮罩透明效果
+- 全屏与置顶行为
+- 任务栏覆盖情况
+- 多显示器覆盖情况
+- 锁屏与睡眠后的恢复
 
-Detailed test notes:
+详细说明：
 
 - `docs/unsigned-windows-testing.md`
 - `docs/manual-test-checklist.md`
