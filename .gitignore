@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+**/.DS_Store
+*.log
+electron-state
+release
+assets
+build/icon.iconset
+build/icon.icns
+build/iconset.tmp

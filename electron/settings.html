@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自定义模式</title>
+    <link rel="stylesheet" href="./settings.css" />
+  </head>
+  <body>
+    <main class="sheet">
+      <h1>自定义时长</h1>
+
+      <form id="settings-form" class="form">
+        <div class="fields">
+          <label class="field">
+            <span class="field-label">工作时长（分钟）</span>
+            <input
+              id="work-duration"
+              name="workDuration"
+              type="text"
+              inputmode="numeric"
+              autocomplete="off"
+              spellcheck="false"
+              maxlength="3"
+              placeholder="1 - 360"
+              required
+            />
+          </label>
+
+          <label class="field">
+            <span class="field-label">休息时长（分钟）</span>
+            <input
+              id="rest-duration"
+              name="restDuration"
+              type="text"
+              inputmode="numeric"
+              autocomplete="off"
+              spellcheck="false"
+              maxlength="3"
+              placeholder="1 - 360"
+              required
+            />
+          </label>
+        </div>
+
+        <p id="error-text" class="error-text"></p>
+
+        <div class="actions">
+          <button id="cancel-button" type="button" class="ghost">取消</button>
+          <button type="submit">保存并启用</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="./settings.js"></script>
+  </body>
+</html>

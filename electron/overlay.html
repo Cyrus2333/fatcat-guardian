@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FatCat Guardian Overlay</title>
+    <link rel="stylesheet" href="./overlay.css" />
+  </head>
+  <body>
+    <main id="shell" class="shell is-hidden" data-mode="idle">
+      <video id="blocking-video" class="cat-video" preload="auto" muted playsinline>
+        <source src="../public/cats/neko1.webm" type="video/webm" />
+      </video>
+
+      <video id="resting-video" class="cat-video" preload="auto" muted playsinline loop>
+        <source src="../public/cats/neko2.webm" type="video/webm" />
+      </video>
+
+      <section class="hud">
+        <p id="badge" class="badge">FatCat Guardian 进场中</p>
+        <h1 id="title">肥猫正在过来。</h1>
+        <p id="copy">入场动画结束后会自动进入休息倒计时。</p>
+        <div class="countdown">
+          <span id="countdown-label">进入休息还剩</span>
+          <strong id="countdown-value">00:00</strong>
+        </div>
+      </section>
+    </main>
+
+    <script src="./overlay.js"></script>
+  </body>
+</html>

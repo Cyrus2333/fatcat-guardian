@@ -1,0 +1,159 @@
+:root {
+  color-scheme: dark;
+  --bg: #120f0d;
+  --panel: #1d1713;
+  --panel-strong: #26201b;
+  --line: rgba(255, 240, 220, 0.1);
+  --text: #fff7ee;
+  --muted: #ceb8a2;
+  --accent: #f0c17a;
+  --danger: #ffb7a1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, 'Songti SC', 'Times New Roman', serif;
+}
+
+body {
+  padding: 0;
+}
+
+.sheet {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  min-height: 100%;
+  padding: 18px 18px 16px;
+  background: var(--panel);
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.form {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.field-label {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.field input {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-strong);
+  color: var(--text);
+  font: inherit;
+  font-size: 18px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  transition: border-color 140ms ease, box-shadow 140ms ease, background-color 140ms ease;
+}
+
+.field input::placeholder {
+  color: rgba(206, 184, 162, 0.52);
+}
+
+.field input:focus {
+  outline: none;
+  border-color: rgba(240, 193, 122, 0.66);
+  box-shadow: 0 0 0 2px rgba(240, 193, 122, 0.12);
+}
+
+.error-text {
+  min-height: 18px;
+  margin: 0;
+  color: var(--danger);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.actions button {
+  height: 42px;
+  min-width: 88px;
+  padding: 0 16px;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 140ms ease, border-color 140ms ease, background-color 140ms ease;
+}
+
+.actions button:hover {
+  transform: translateY(-1px);
+}
+
+.actions button:active {
+  transform: translateY(0);
+}
+
+.ghost {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+}
+
+.actions button[type='submit'] {
+  border: 0;
+  background: linear-gradient(135deg, #f0c17a, #d89154);
+  color: #24170f;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .field input,
+  .actions button {
+    transition: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .fields {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .sheet {
+    padding: 16px 16px 14px;
+  }
+}
