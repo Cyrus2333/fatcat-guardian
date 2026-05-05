@@ -2,38 +2,9 @@
 
 [中文 README](./README.md)
 
-FatCat Guardian is a tray-first desktop break reminder built with Electron.
+FatCat Guardian is for people who stay in front of the computer for long periods and tend to ignore ordinary reminder popups.
 
-Instead of a small toast or notification, it brings a cat directly onto the screen when it is time to rest, as if a real cat decided to occupy your workspace.
-
-## What It Does
-
-FatCat Guardian is designed for people who stay in front of the computer for too long and tend to ignore normal reminder popups.
-
-When the work timer reaches its limit, the app raises a full-screen transparent overlay and lets a cat take over the desktop for the break period.
-
-## Highlights
-
-- tray-first experience with no permanent main window
-- full-screen transparent overlay instead of a small notification
-- support for multi-monitor coverage during breaks
-- built-in preset schedules plus custom work/rest durations
-- local media assets with no cloud processing requirement
-
-## Screenshots and Demo
-
-You can add the following here later:
-
-- one screenshot of the app in its normal working state
-- one screenshot of the cat overlay during a break
-- one short demo GIF or mp4
-
-A practical approach is to store preview media under `assets/preview/` or upload them via GitHub Releases, Issues, or Discussions and then reference them from the README.
-
-## Platform Status
-
-- macOS: primary tested platform
-- Windows: packaging is scaffolded, runtime verification is still recommended
+Instead of using a small notification, it lets a cat take over your screen when it is time to rest, much like a real cat climbing onto your keyboard at home.
 
 ## Inspiration and Asset Credits
 
@@ -46,6 +17,29 @@ The core idea behind this project, as well as the cat media assets, comes from a
 FatCat Guardian is my Electron-based desktop reinterpretation of that idea and those assets. The goal here is to let the cat move beyond the browser and take over the full native desktop screen as a real desktop break reminder.
 
 Huge thanks to the original author for the excellent concept and for open-sourcing both the project and the assets. If you reuse or reference the related work, please make sure you follow the applicable open-source license terms and give proper attribution to the original author.
+
+## Demo
+
+- Demo video: [FatCat Guardian Demo Video](./preview/%E8%82%A5%E7%8C%AB%E5%AE%88%E6%8A%A4%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91-opencut.mp4)
+
+If you want to keep improving the repository presentation later, it is worth adding:
+
+- one screenshot of the app in its normal working state
+- one screenshot of the cat overlay during a break
+- one screenshot of the tray menu or current status view
+
+## Highlights
+
+- tray-first experience with no permanent main window
+- full-screen transparent overlay instead of a small notification
+- support for multi-monitor coverage during breaks
+- built-in preset schedules plus custom work/rest durations
+- local media assets with no cloud processing requirement
+
+## Platform Status
+
+- macOS: primary tested platform
+- Windows: packaging is scaffolded, runtime verification is still recommended
 
 ## Quick Start
 
@@ -72,12 +66,44 @@ Run syntax checks:
 npm run check
 ```
 
+Preview the static project website locally:
+
+```bash
+npm run site:dev
+```
+
+Check the website scripts:
+
+```bash
+npm run site:check
+```
+
 Build release artifacts:
 
 ```bash
 npm run dist:mac
 npm run dist:win
 ```
+
+## Project Website
+
+The repository now also includes a separate static website under `site/`, intended for deployment to GitHub Pages.
+
+Current characteristics:
+
+- no extra frontend framework required
+- does not interfere with the Electron desktop app build chain
+- published automatically through `.github/workflows/deploy-pages.yml`
+
+The default local preview address is:
+
+- `http://localhost:4173`
+
+To enable GitHub Pages:
+
+1. Push to the `main` branch.
+2. In `Settings > Pages`, confirm that the source is GitHub Actions.
+3. Wait for the `Deploy GitHub Pages` workflow to finish.
 
 ## Current Scope
 
@@ -259,7 +285,7 @@ Performance logs, when manually enabled from the tray menu, are written to:
 
 ## Further Repository Polish
 
-If you want to improve the repository presentation later, consider adding:
+If you want to keep improving the repository later, consider adding:
 
 - a polished first GitHub Release note
 - updated Windows compatibility notes after real hardware testing
