@@ -33,7 +33,24 @@ https://github.com/user-attachments/assets/07e48424-62ea-4b92-b782-5f8e69adcf72
 ## Platform Status
 
 - macOS: primary tested platform
-- Windows: packaging is scaffolded, runtime verification is still recommended
+- Windows: test builds are now published, but real Windows verification is still recommended
+
+## Downloads
+
+Current test release:
+
+- [v0.1.0-alpha](https://github.com/Cyrus2333/fatcat-guardian/releases/tag/v0.1.0-alpha)
+
+Recommended downloads:
+
+- macOS (Apple Silicon): `FatCat.Guardian-0.1.0-arm64.dmg`
+- Windows: `FatCat.Guardian.Setup.0.1.0.exe`
+- Windows fallback portable build: `FatCat.Guardian.Portable.0.1.0-x64.exe`
+
+Recommendation:
+
+- Windows users should prefer the `Setup` installer to avoid architecture guesswork
+- the `Portable` build is better as a fallback for users who want to run it directly without installing
 
 ## Quick Start
 
@@ -101,7 +118,7 @@ To enable GitHub Pages:
 
 ## Current Scope
 
-- macOS-first desktop app, with Windows packaging scaffolded
+- macOS-first desktop app, with Windows test builds already published
 - tray-only workflow, no permanent main window
 - full-screen transparent overlay across multiple displays
 - work/rest schedule presets plus custom schedule
@@ -155,6 +172,7 @@ npm run dist:win
 Current status:
 
 - the repository is configured for Windows packaging
+- Windows test builds have been generated and uploaded
 - runtime behavior still needs validation on a real Windows machine
 - Windows signing is not configured yet
 
@@ -205,7 +223,7 @@ Limitations:
 
 Suggested approach:
 
-- attach unsigned `nsis` or `portable` builds to GitHub Releases
+- attach the unsigned `nsis` installer to GitHub Releases and keep `portable` as a fallback download
 - label them clearly as test builds
 - collect feedback on transparency, multi-monitor coverage, and taskbar coverage
 

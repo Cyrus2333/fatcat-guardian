@@ -28,6 +28,8 @@
         </a>
         <nav class="topnav" aria-label="站点导航">
           <a href="#features">核心特性</a>
+          <a href="#downloads">下载说明</a>
+          <a href="#platform">平台状态</a>
         </nav>
       </header>
 
@@ -41,6 +43,9 @@
             </p>
 
             <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/Cyrus2333/fatcat-guardian/releases/tag/v0.1.0-alpha" target="_blank" rel="noreferrer">
+                下载测试版
+              </a>
               <a class="button button-primary" href="https://github.com/Cyrus2333/fatcat-guardian" target="_blank" rel="noreferrer">
                 查看 GitHub 仓库
               </a>
@@ -54,11 +59,11 @@
               </div>
               <div>
                 <dt>运行模式</dt>
-                <dd>常驻托盘角落</dd>
+                <dd>托盘常驻后台</dd>
               </div>
               <div>
-                <dt>适用人群</dt>
-                <dd>不自律的大人</dd>
+                <dt>当前发布</dt>
+                <dd>macOS / Windows 测试版</dd>
               </div>
             </dl>
           </div>
@@ -93,18 +98,19 @@
               <div class="ui-chip-row">
                 <span class="ui-chip">25 / 5</span>
                 <span class="ui-chip">50 / 10</span>
-                <span class="ui-chip">Custom</span>
+                <span class="ui-chip">自定义</span>
               </div>
               <div class="ui-panel">
                 <div>
                   <p class="mini-label">Session Status</p>
-                  <h2>Rest starts in 00:47</h2>
+                  <h2>距离休息 00:47</h2>
                 </div>
                 <div class="ui-divider"></div>
                 <ul>
                   <li>多显示器同步覆盖</li>
-                  <li>支持自定义工作 / 休息时长</li>
-                  <li>内置紧急跳过开关</li>
+                  <li>支持 25/5、50/10 和自定义时长</li>
+                  <li>锁屏、息屏、休眠时暂停计时</li>
+                  <li>Esc 可跳过当前休息</li>
                 </ul>
               </div>
             </div>
@@ -132,15 +138,60 @@
             </article>
             <article class="feature-card">
               <h3>多显示器支持</h3>
-              <p>多屏同时覆盖。</p>
+              <p>休息开始后，多屏同时覆盖。</p>
             </article>
             <article class="feature-card">
               <h3>本地素材运行</h3>
               <p>素材本地运行，不依赖在线服务。</p>
             </article>
             <article class="feature-card">
-              <h3>给开源发布准备好了</h3>
-              <p>桌面应用和官网都能直接从仓库发布。</p>
+              <h3>开源可分发</h3>
+              <p>源码、官网、测试安装包都已准备好公开发布。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="downloads" class="download-section">
+          <div class="section-head">
+            <p class="section-tag">Downloads</p>
+            <h2>下载测试版。</h2>
+          </div>
+
+          <div class="download-grid">
+            <article class="download-card download-card-primary">
+              <p class="mini-label">Latest Release</p>
+              <h3>v0.1.0-alpha</h3>
+              <p>
+                当前建议优先从 GitHub Release 下载。Windows 用户优先安装版，减少架构判断成本。
+              </p>
+              <div class="download-actions">
+                <a class="button button-primary" href="https://github.com/Cyrus2333/fatcat-guardian/releases/tag/v0.1.0-alpha" target="_blank" rel="noreferrer">
+                  打开 Release 页面
+                </a>
+                <a class="button button-secondary" href="https://github.com/Cyrus2333/fatcat-guardian" target="_blank" rel="noreferrer">
+                  查看源码
+                </a>
+              </div>
+            </article>
+
+            <article class="download-card">
+              <p class="mini-label">macOS</p>
+              <h3>Apple Silicon 测试包</h3>
+              <ul class="download-list">
+                <li><a href="https://github.com/Cyrus2333/fatcat-guardian/releases/download/v0.1.0-alpha/FatCat.Guardian-0.1.0-arm64.dmg" target="_blank" rel="noreferrer">FatCat.Guardian-0.1.0-arm64.dmg</a></li>
+                <li><a href="https://github.com/Cyrus2333/fatcat-guardian/releases/download/v0.1.0-alpha/FatCat.Guardian-0.1.0-arm64.zip" target="_blank" rel="noreferrer">FatCat.Guardian-0.1.0-arm64.zip</a></li>
+              </ul>
+              <p class="download-note">未签名、未 notarize，首次打开时可能需要在系统设置里手动放行。</p>
+            </article>
+
+            <article class="download-card">
+              <p class="mini-label">Windows</p>
+              <h3>安装版优先</h3>
+              <ul class="download-list">
+                <li><a href="https://github.com/Cyrus2333/fatcat-guardian/releases/download/v0.1.0-alpha/FatCat.Guardian.Setup.0.1.0.exe" target="_blank" rel="noreferrer">FatCat.Guardian.Setup.0.1.0.exe</a></li>
+                <li><a href="https://github.com/Cyrus2333/fatcat-guardian/releases/download/v0.1.0-alpha/FatCat.Guardian.Portable.0.1.0-x64.exe" target="_blank" rel="noreferrer">FatCat.Guardian.Portable.0.1.0-x64.exe</a></li>
+              </ul>
+              <p class="download-note">`Setup` 为推荐下载项，`Portable` 适合不想安装、只想直接试运行的用户。Windows 包当前仍为未签名测试版。</p>
             </article>
           </div>
         </section>
@@ -158,7 +209,7 @@
             </article>
             <article class="platform-card">
               <h3>Windows</h3>
-              <p>已接入打包，仍需实机验证。</p>
+              <p>测试安装包已提供，仍需更多真实环境验证。</p>
             </article>
           </div>
         </section>

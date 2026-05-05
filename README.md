@@ -33,7 +33,24 @@ https://github.com/user-attachments/assets/07e48424-62ea-4b92-b782-5f8e69adcf72
 ## 平台状态
 
 - macOS：当前主要验证平台
-- Windows：已完成打包配置，仍建议在真实 Windows 机器上继续验证运行表现
+- Windows：已提供测试安装包，仍建议在真实 Windows 机器上继续验证运行表现
+
+## 下载说明
+
+当前测试版 Release：
+
+- [v0.1.0-alpha](https://github.com/Cyrus2333/fatcat-guardian/releases/tag/v0.1.0-alpha)
+
+当前建议下载：
+
+- macOS（Apple Silicon）：`FatCat.Guardian-0.1.0-arm64.dmg`
+- Windows：`FatCat.Guardian.Setup.0.1.0.exe`
+- Windows 备用便携版：`FatCat.Guardian.Portable.0.1.0-x64.exe`
+
+选择建议：
+
+- Windows 用户优先下载 `Setup` 安装版，尽量减少架构判断成本
+- `Portable` 更适合不想安装、只想直接试运行的用户
 
 ## 快速开始
 
@@ -101,7 +118,7 @@ npm run dist:win
 
 ## 当前范围
 
-- 首要面向 macOS，Windows 打包链路已接好
+- 首要面向 macOS，Windows 测试构建包也已提供
 - 托盘优先的轻量交互方式
 - 多屏全屏透明遮罩
 - 预设工作/休息模式与自定义时长
@@ -155,7 +172,8 @@ npm run dist:win
 当前状态：
 
 - 仓库已经具备 Windows 打包配置
-- 仍需要在真实 Windows 机器上验证运行效果
+- 已生成并上传 Windows 测试构建包
+- 仍需要在真实 Windows 机器上持续验证运行效果
 - 还没有接入 Windows 签名
 
 Electron Builder 官方说明中提到，很多情况下可以在 macOS 或 Linux 上构建 Windows 目标，但像透明遮罩、置顶行为、安装器体验这类问题，仍然需要在目标平台实机验证：
@@ -205,7 +223,7 @@ Electron Builder 官方说明中提到，很多情况下可以在 macOS 或 Linu
 
 建议做法：
 
-- 在 GitHub Releases 中附上 unsigned 的 `nsis` 安装包或 `portable` 包
+- 在 GitHub Releases 中附上 unsigned 的 `nsis` 安装包，并将 `portable` 作为备用下载项
 - 明确标注这是测试版
 - 收集关于多屏覆盖、透明显示、任务栏覆盖的反馈
 

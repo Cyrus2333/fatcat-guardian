@@ -83,6 +83,11 @@ Not recommended:
 
 This is an unsigned Windows test build of FatCat Guardian.
 
+Recommended downloads:
+
+- `FatCat.Guardian.Setup.0.1.0.exe`
+- `FatCat.Guardian.Portable.0.1.0-x64.exe` (fallback)
+
 ### Important
 
 - Windows Defender SmartScreen may warn on first launch

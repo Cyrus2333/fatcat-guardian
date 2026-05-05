@@ -23,6 +23,13 @@ Expected outputs usually include:
 
 The exact filenames depend on platform, version, and architecture.
 
+The current Windows test builds uploaded for `v0.1.0-alpha` are:
+
+- `FatCat.Guardian.Setup.0.1.0.exe`
+- `FatCat.Guardian.Portable.0.1.0-x64.exe`
+
+The recommended distribution choice is the `Setup` installer, with `Portable` kept as a fallback download.
+
 ## Current Caveat
 
 This project is currently developed primarily on macOS.
@@ -54,4 +61,4 @@ Ask Windows testers to verify:
 
 ## Suggested Release Note
 
-> Test build only. This Windows package is unsigned and may trigger SmartScreen or other trust warnings. Install it only if you trust the source, and please report any issues with overlay coverage, transparency, or multi-monitor behavior.
+> Test build only. The recommended Windows download is `FatCat.Guardian.Setup.0.1.0.exe`. This package is unsigned and may trigger SmartScreen or other trust warnings. Install it only if you trust the source, and please report any issues with overlay coverage, transparency, taskbar coverage, or multi-monitor behavior. A portable fallback build is also provided.

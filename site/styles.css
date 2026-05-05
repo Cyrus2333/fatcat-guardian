@@ -203,6 +203,12 @@ video {
   color: var(--text);
 }
 
+.button.button-primary + .button.button-primary {
+  background: rgba(255, 243, 229, 0.05);
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+}
+
 .hero-metrics {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -368,14 +374,22 @@ video {
   gap: 18px;
 }
 
+.download-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
 .feature-card,
 .platform-card,
+.download-card,
 .cta-section {
   border-radius: 28px;
 }
 
 .feature-section,
-.platform-section {
+.platform-section,
+.download-section {
   padding-top: 88px;
 }
 
@@ -399,12 +413,14 @@ video {
 }
 
 .feature-card,
-.platform-card {
+.platform-card,
+.download-card {
   padding: 22px;
 }
 
 .feature-card h3,
-.platform-card h3 {
+.platform-card h3,
+.download-card h3 {
   margin: 0;
   font-size: 22px;
   letter-spacing: -0.03em;
@@ -412,11 +428,49 @@ video {
 
 .feature-card p,
 .platform-card p,
+.download-card p,
 .cta-copy p,
 .footer p {
   margin: 12px 0 0;
   color: var(--muted);
   line-height: 1.8;
+}
+
+.download-card {
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+}
+
+.download-card-primary {
+  background:
+    radial-gradient(circle at top right, rgba(243, 189, 109, 0.18), transparent 34%),
+    rgba(29, 20, 16, 0.88);
+}
+
+.download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.download-list {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.download-list a {
+  color: var(--text);
+  text-decoration-color: rgba(255, 247, 239, 0.34);
+  text-underline-offset: 3px;
+}
+
+.download-note {
+  margin-top: 16px;
 }
 
 .cta-section {
@@ -525,6 +579,10 @@ video {
     grid-template-columns: 1fr;
   }
 
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+
   .cta-section {
     grid-template-columns: 1fr;
   }
@@ -565,7 +623,8 @@ video {
 
   .hero-metrics,
   .platform-grid,
-  .feature-grid {
+  .feature-grid,
+  .download-grid {
     grid-template-columns: 1fr;
   }
 

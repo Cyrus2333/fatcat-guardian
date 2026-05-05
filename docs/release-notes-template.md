@@ -83,6 +83,11 @@ npm run dist:win
 
 这是 FatCat Guardian 的一个未签名 Windows 测试版本。
 
+推荐下载文件：
+
+- `FatCat.Guardian.Setup.0.1.0.exe`
+- `FatCat.Guardian.Portable.0.1.0-x64.exe`（备用）
+
 ### 注意事项
 
 - Windows Defender SmartScreen 可能在首次运行时给出警告

@@ -23,6 +23,13 @@ npm run dist:win
 
 具体文件名会随平台、架构和版本号变化。
 
+当前 `v0.1.0-alpha` 已上传的 Windows 测试包为：
+
+- `FatCat.Guardian.Setup.0.1.0.exe`
+- `FatCat.Guardian.Portable.0.1.0-x64.exe`
+
+建议优先分发 `Setup` 安装版，`Portable` 作为备用下载项。
+
 ## 当前注意事项
 
 这个项目目前主要是在 macOS 上开发和验证。
@@ -54,4 +61,4 @@ Electron Builder 官方说明中提到，很多情况下可以在 macOS 或 Linu
 
 ## 建议的 Release 说明文案
 
-> Test build only. This Windows package is unsigned and may trigger SmartScreen or other trust warnings. Install it only if you trust the source, and please report any issues with overlay coverage, transparency, or multi-monitor behavior.
+> Test build only. The recommended Windows download is `FatCat.Guardian.Setup.0.1.0.exe`. This package is unsigned and may trigger SmartScreen or other trust warnings. Install it only if you trust the source, and please report any issues with overlay coverage, transparency, taskbar coverage, or multi-monitor behavior. A portable fallback build is also provided.
