@@ -1,186 +1,188 @@
 # FatCat Guardian
 
-FatCat Guardian is a tray-first desktop break reminder built with Electron.
+[English README](/Users/huangjingye/Documents/project/fatcat-guardian/README.en.md)
 
-Instead of a small toast or notification, it brings a cat directly onto the screen when it is time to rest, as if a real cat decided to occupy your workspace.
+FatCat Guardian 是一个基于 Electron 的托盘常驻桌面休息提醒应用。
 
-## What It Does
+它不会用一个容易被忽略的小弹窗提醒你，而是在该休息的时候，直接让一只猫咪“霸占”你的屏幕，就像现实里的猫会趴上键盘一样。
 
-FatCat Guardian is designed for people who stay in front of the computer for too long and tend to ignore normal reminder popups.
+## 它是做什么的
 
-When the work timer reaches its limit, the app raises a full-screen transparent overlay and lets a cat take over the desktop for the break period.
+FatCat Guardian 面向那些长时间盯着电脑屏幕、并且很容易无视普通提醒弹窗的人。
 
-## Highlights
+当工作计时达到阈值后，应用会拉起一个全屏透明遮罩，让猫咪直接出现在桌面之上，并强制进入休息阶段。
 
-- tray-first experience with no permanent main window
-- full-screen transparent overlay instead of a small notification
-- support for multi-monitor coverage during breaks
-- built-in preset schedules plus custom work/rest durations
-- local media assets with no cloud processing requirement
+## 主要特性
 
-## Platform Status
+- 托盘常驻，无需长期打开主窗口
+- 使用全屏透明遮罩，而不是普通通知弹窗
+- 支持多显示器同时覆盖
+- 内置预设工作/休息模式，也支持自定义时长
+- 素材本地运行，不依赖云端处理
 
-- macOS: primary tested platform
-- Windows: packaging is scaffolded, runtime verification still recommended
+## 平台状态
 
-## Quick Start
+- macOS：当前主要验证平台
+- Windows：已完成打包配置，仍建议在真实 Windows 机器上继续验证运行表现
 
-Requirements:
+## 快速开始
 
-- Node.js 20 or newer recommended
+环境要求：
+
+- 推荐 Node.js 20 或更高版本
 - npm
 
-Install dependencies:
+安装依赖：
 
 ```bash
 npm install
 ```
 
-Run in development mode:
+启动开发模式：
 
 ```bash
 npm run dev
 ```
 
-Run syntax checks:
+执行语法检查：
 
 ```bash
 npm run check
 ```
 
-Build release artifacts:
+构建发布产物：
 
 ```bash
 npm run dist:mac
 npm run dist:win
 ```
 
-## Current Scope
+## 当前范围
 
-- macOS-first desktop app, with Windows packaging scaffolded
-- tray-only workflow, no permanent main window
-- full-screen transparent overlay across multiple displays
-- work/rest schedule presets plus custom schedule
-- local media assets for the cat animation
+- 首要面向 macOS，Windows 打包链路已接好
+- 托盘优先的轻量交互方式
+- 多屏全屏透明遮罩
+- 预设工作/休息模式与自定义时长
+- 使用本地猫咪素材播放动画
 
-## License
+## 开源协议
 
-This project is licensed under `GPL-3.0-only`. See [LICENSE](/Users/huangjingye/Documents/project/fatcat-guardian/LICENSE).
+本项目采用 `GPL-3.0-only` 协议，见 [LICENSE](/Users/huangjingye/Documents/project/fatcat-guardian/LICENSE)。
 
-## Local Development
+## 本地开发说明
 
-For the current best runtime experience, use macOS during active development and manual testing.
+当前最佳开发与手动测试体验仍然是 macOS。
 
-## Packaging
+## 打包
 
-Build scripts:
+可用命令：
 
 ```bash
 npm run dist:mac
 npm run dist:win
 ```
 
-Generic entry:
+通用入口：
 
 ```bash
 npm run dist
 ```
 
-Current output directory:
+当前输出目录：
 
 - `release/`
 
-Current runtime media assets:
+当前运行时实际使用的素材：
 
 - `public/cats/neko1.webm`
 - `public/cats/neko2.webm`
 
-## Windows Packaging Status
+## Windows 打包状态
 
-Windows packaging is scaffolded with `electron-builder` and currently targets:
+当前 Windows 打包已通过 `electron-builder` 配置，目标包括：
 
 - `nsis`
 - `portable`
 
-Build command:
+构建命令：
 
 ```bash
 npm run dist:win
 ```
 
-Current status:
+当前状态：
 
-- the project can be configured for Windows packaging from this repo
-- the app still needs runtime validation on a real Windows machine
-- Windows signing is not configured yet
+- 仓库已经具备 Windows 打包配置
+- 仍需要在真实 Windows 机器上验证运行效果
+- 还没有接入 Windows 签名
 
-Electron Builder documents that Windows builds can be produced locally from macOS or Linux in many cases, but target-platform validation is still important, especially for overlay behavior and installer UX. See:
+Electron Builder 官方说明中提到，很多情况下可以在 macOS 或 Linux 上构建 Windows 目标，但像透明遮罩、置顶行为、安装器体验这类问题，仍然需要在目标平台实机验证：
 
 - [electron-builder: Multi Platform Build](https://www.electron.build/multi-platform-build.html)
 - [electron-builder: Windows code signing](https://www.electron.build/code-signing-win.html)
 
-Detailed tester instructions are in [docs/unsigned-windows-testing.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-windows-testing.md).
-Release note templates are in [docs/release-notes-template.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/release-notes-template.md).
-Manual verification steps are in [docs/manual-test-checklist.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/manual-test-checklist.md).
+详细测试说明见：
 
-## Open Source Release Plan
+- [docs/unsigned-windows-testing.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-windows-testing.md)
+- [docs/release-notes-template.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/release-notes-template.md)
+- [docs/manual-test-checklist.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/manual-test-checklist.md)
 
-This project is currently prepared for the following open-source workflow:
+## 开源发布策略
 
-1. Publish the source repository.
-2. Document local development and packaging steps clearly.
-3. Optionally attach unsigned and unnotarized macOS test builds for trusted testers.
+当前仓库是按下面这个开源路径准备的：
 
-This means the repository is ready for public code sharing even if Apple signing and notarization are not set up yet.
+1. 先公开源码仓库
+2. 在 README 中写清本地运行和打包方式
+3. 如有需要，再附带未签名、未公证的测试安装包供小范围体验
 
-## Unsigned macOS Test Builds
+也就是说，即使暂时不做 Apple 签名与 notarization，这个仓库也已经适合先公开源码。
 
-If you package the app without Apple Developer signing and notarization, the build can still be shared for limited testing, but it should be treated as a test artifact rather than a polished consumer release.
+## macOS 未签名测试包
 
-Important limitations:
+如果没有接入 Apple Developer 签名和 notarization，macOS 包仍然可以分享给测试用户，但应被视为测试产物，而不是正式面向大众的最终发行版。
 
-- macOS will usually block the app on first launch.
-- Testers must manually override Gatekeeper.
-- This is suitable for small-scale testing, not broad end-user distribution.
+限制包括：
 
-Suggested wording for a GitHub Release:
+- macOS 首次打开时通常会拦截
+- 测试者需要手动在系统设置里允许打开
+- 适合小范围测试，不适合直接面向普通用户广泛分发
 
-> Test build only. This macOS package is unsigned and not notarized. macOS may block it on first launch. Please only install it if you trust the source and are comfortable manually allowing it in Privacy & Security settings.
+详细说明见：
 
-Detailed tester instructions are in [docs/unsigned-mac-testing.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-mac-testing.md).
+- [docs/unsigned-mac-testing.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-mac-testing.md)
 
-## Unsigned Windows Test Builds
+## Windows 未签名测试包
 
-Unsigned Windows builds are practical for testing and open-source sharing, but they are still test artifacts.
+未签名 Windows 包也适合用于开源项目早期测试，但依然应被视为测试产物。
 
-Important limitations:
+限制包括：
 
-- Windows Defender SmartScreen may warn on first launch.
-- Installer reputation will be weak until the app is signed and distributed more broadly.
-- Overlay behavior should be tested on a real multi-monitor Windows setup before calling it production-ready.
+- 首次运行时可能触发 Windows Defender SmartScreen 警告
+- 在没有签名和积累信誉前，安装器信任度会比较弱
+- 多屏覆盖、透明遮罩、任务栏覆盖等行为仍建议实机验证
 
-Suggested use:
+建议做法：
 
-- attach the unsigned `nsis` installer or `portable` build to GitHub Releases
-- label it clearly as a test build
-- collect tester feedback specifically on overlay coverage, taskbar coverage, and multi-display behavior
+- 在 GitHub Releases 中附上 unsigned 的 `nsis` 安装包或 `portable` 包
+- 明确标注这是测试版
+- 收集关于多屏覆盖、透明显示、任务栏覆盖的反馈
 
-## Formal macOS Distribution
+## 未来正式分发 macOS
 
-If you later want downloadable macOS builds that open more cleanly for end users, you will need Apple signing and notarization.
+如果你后续希望让用户下载后更顺滑地安装与打开 macOS 应用，仍然需要 Apple 签名和 notarization。
 
-This repo already includes the needed scaffolding:
+仓库中已经准备好的相关文件包括：
 
 - `build/icon.icns`
 - `build/entitlements.mac.plist`
 - `build/entitlements.mac.inherit.plist`
 - `scripts/notarize.cjs`
 
-Recommended signing certificate:
+推荐证书：
 
 - `Developer ID Application: <Your Name or Team> (<TEAM_ID>)`
 
-Supported notarization env var flows:
+支持的 notarization 环境变量方案：
 
 1. Apple ID + app-specific password
 
@@ -199,7 +201,7 @@ export APPLE_API_KEY_ID="ABC123XYZ"
 export APPLE_API_ISSUER="00000000-0000-0000-0000-000000000000"
 ```
 
-Formal macOS packaging:
+正式 macOS 打包命令：
 
 ```bash
 npm install
@@ -207,13 +209,13 @@ npm run check
 npm run dist:mac
 ```
 
-Expected macOS outputs:
+预期产物：
 
 - `release/FatCat Guardian-<version>-arm64.dmg`
 - `release/FatCat Guardian-<version>-arm64-mac.zip`
 - `release/mac-arm64/FatCat Guardian.app`
 
-Recommended validation:
+建议验证命令：
 
 ```bash
 codesign --verify --deep --strict --verbose=2 "release/mac-arm64/FatCat Guardian.app"
@@ -221,21 +223,22 @@ spctl --assess --type execute --verbose "release/mac-arm64/FatCat Guardian.app"
 xcrun stapler validate "release/FatCat Guardian-<version>-arm64.dmg"
 ```
 
-If notarization credentials are missing, packaging still succeeds, but notarization is skipped.
+如果没有配置 notarization 凭据，构建仍然会成功，但会跳过 notarization。
 
-## Project Data
+## 本地数据位置
 
-Runtime state is persisted locally in:
+运行时状态默认保存在：
 
 - `~/Library/Application Support/fatcat-guardian/state.json`
 
-Performance logs, when manually enabled from the tray menu, are written to:
+性能日志在你手动从托盘菜单开启后，会写入：
 
 - `~/Library/Application Support/fatcat-guardian/logs/performance.ndjson`
 
-## Repository Polish
+## 仓库进一步完善建议
 
-Optional improvements before publishing:
+如果你后续还想继续打磨仓库展示，可以补：
 
-- add screenshots or a short demo clip for the repository page
-- optionally test the Windows build on a real Windows machine before advertising support
+- README 截图或短视频演示
+- 首个 GitHub Release 的测试版说明
+- Windows 实机测试后的平台兼容说明更新
