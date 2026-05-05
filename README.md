@@ -22,14 +22,6 @@ FatCat Guardian 是我基于这份想法和素材，用 Electron 桌面框架重
 
 https://github.com/user-attachments/assets/07e48424-62ea-4b92-b782-5f8e69adcf72
 
-- 备用仓库内视频文件：[肥猫守护演示视频-opencut.mp4](./preview/%E8%82%A5%E7%8C%AB%E5%AE%88%E6%8A%A4%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91-opencut.mp4)
-
-后续如果要继续完善仓库展示，建议再补：
-
-- 一张应用处于正常工作状态的截图
-- 一张猫咪遮罩触发时的截图
-- 一张托盘菜单或设置状态的截图
-
 ## 主要特性
 
 - 托盘常驻，无需长期打开主窗口
