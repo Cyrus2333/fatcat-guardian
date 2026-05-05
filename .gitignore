@@ -5,6 +5,8 @@ node_modules
 electron-state
 release
 assets
+!site/assets/
+!site/assets/**
 build/icon.iconset
 build/icon.icns
 build/iconset.tmp
