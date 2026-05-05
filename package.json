@@ -49,14 +49,29 @@
     },
     "win": {
       "target": [
-        "nsis",
-        "portable"
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
       ],
       "icon": "electron/assets/tray-icon-win.ico"
     },
     "nsis": {
+      "artifactName": "${productName} Setup ${version}.${ext}",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
+    },
+    "portable": {
+      "artifactName": "${productName} Portable ${version}-${arch}.${ext}"
     }
   },
   "devDependencies": {
