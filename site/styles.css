@@ -368,12 +368,6 @@ video {
   line-height: 1.8;
 }
 
-.platform-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
 .download-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) repeat(2, minmax(0, 1fr));
@@ -381,14 +375,12 @@ video {
 }
 
 .feature-card,
-.platform-card,
 .download-card,
 .cta-section {
   border-radius: 28px;
 }
 
 .feature-section,
-.platform-section,
 .download-section {
   padding-top: 88px;
 }
@@ -413,13 +405,11 @@ video {
 }
 
 .feature-card,
-.platform-card,
 .download-card {
   padding: 22px;
 }
 
 .feature-card h3,
-.platform-card h3,
 .download-card h3 {
   margin: 0;
   font-size: 22px;
@@ -427,7 +417,6 @@ video {
 }
 
 .feature-card p,
-.platform-card p,
 .download-card p,
 .cta-copy p,
 .footer p {
@@ -622,7 +611,6 @@ video {
   }
 
   .hero-metrics,
-  .platform-grid,
   .feature-grid,
   .download-grid {
     grid-template-columns: 1fr;
