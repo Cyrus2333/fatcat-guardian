@@ -20,7 +20,9 @@ Huge thanks to the original author for the excellent concept and for open-sourci
 
 ## Demo
 
-- Demo video: [FatCat Guardian Demo Video](./preview/%E8%82%A5%E7%8C%AB%E5%AE%88%E6%8A%A4%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91-opencut.mp4)
+https://github.com/user-attachments/assets/07e48424-62ea-4b92-b782-5f8e69adcf72
+
+- Backup repository video file: [FatCat Guardian Demo Video](./preview/%E8%82%A5%E7%8C%AB%E5%AE%88%E6%8A%A4%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91-opencut.mp4)
 
 If you want to keep improving the repository presentation later, it is worth adding:
 
