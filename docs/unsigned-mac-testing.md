@@ -1,6 +1,6 @@
 # macOS 未签名测试包说明
 
-[English Version](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-mac-testing.en.md)
+[English Version](./unsigned-mac-testing.en.md)
 
 这份说明仅适用于小范围测试。
 

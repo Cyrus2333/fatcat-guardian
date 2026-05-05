@@ -1,6 +1,6 @@
 # Release Notes Templates
 
-[中文版本](/Users/huangjingye/Documents/project/fatcat-guardian/docs/release-notes-template.md)
+[中文版本](./release-notes-template.md)
 
 Use the following templates when publishing the repository or attaching test builds to GitHub Releases.
 

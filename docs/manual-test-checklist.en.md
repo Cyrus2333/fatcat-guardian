@@ -1,6 +1,6 @@
 # Manual Test Checklist
 
-[中文版本](/Users/huangjingye/Documents/project/fatcat-guardian/docs/manual-test-checklist.md)
+[中文版本](./manual-test-checklist.md)
 
 Use this checklist before publishing the source repository or attaching new test builds.
 

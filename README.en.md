@@ -1,6 +1,6 @@
 # FatCat Guardian
 
-[中文 README](/Users/huangjingye/Documents/project/fatcat-guardian/README.md)
+[中文 README](./README.md)
 
 FatCat Guardian is a tray-first desktop break reminder built with Electron.
 
@@ -79,7 +79,7 @@ npm run dist:win
 
 ## License
 
-This project is licensed under `GPL-3.0-only`. See [LICENSE](/Users/huangjingye/Documents/project/fatcat-guardian/LICENSE).
+This project is licensed under `GPL-3.0-only`. See [LICENSE](./LICENSE).
 
 ## Local Development
 
@@ -135,9 +135,9 @@ Electron Builder documents that Windows builds can often be produced from macOS 
 
 Detailed notes:
 
-- [docs/unsigned-windows-testing.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-windows-testing.md)
-- [docs/release-notes-template.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/release-notes-template.md)
-- [docs/manual-test-checklist.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/manual-test-checklist.md)
+- [docs/unsigned-windows-testing.md](./docs/unsigned-windows-testing.md)
+- [docs/release-notes-template.md](./docs/release-notes-template.md)
+- [docs/manual-test-checklist.md](./docs/manual-test-checklist.md)
 
 ## Open Source Release Plan
 
@@ -161,7 +161,7 @@ Limitations:
 
 Detailed notes:
 
-- [docs/unsigned-mac-testing.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-mac-testing.md)
+- [docs/unsigned-mac-testing.md](./docs/unsigned-mac-testing.md)
 
 ## Unsigned Windows Test Builds
 

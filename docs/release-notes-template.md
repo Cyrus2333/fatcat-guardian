@@ -1,6 +1,6 @@
 # Release 文案模板
 
-[English Version](/Users/huangjingye/Documents/project/fatcat-guardian/docs/release-notes-template.en.md)
+[English Version](./release-notes-template.en.md)
 
 以下模板可直接用于 GitHub Releases，或作为发布说明的基础文案。
 

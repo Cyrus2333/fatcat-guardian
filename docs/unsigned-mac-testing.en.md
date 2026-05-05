@@ -1,6 +1,6 @@
 # Unsigned macOS Test Build Guide
 
-[中文版本](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-mac-testing.md)
+[中文版本](./unsigned-mac-testing.md)
 
 This guide is for small-scale testing only.
 

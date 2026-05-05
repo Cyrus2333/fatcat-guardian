@@ -1,6 +1,6 @@
 # 手动测试清单
 
-[English Version](/Users/huangjingye/Documents/project/fatcat-guardian/docs/manual-test-checklist.en.md)
+[English Version](./manual-test-checklist.en.md)
 
 在公开源码仓库，或上传新的测试构建包之前，建议按这份清单手动确认一遍。
 

@@ -1,6 +1,6 @@
 # Windows 未签名测试包说明
 
-[English Version](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-windows-testing.en.md)
+[English Version](./unsigned-windows-testing.en.md)
 
 这份说明仅适用于小范围测试。
 

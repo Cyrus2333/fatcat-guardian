@@ -1,6 +1,6 @@
 # FatCat Guardian
 
-[English README](/Users/huangjingye/Documents/project/fatcat-guardian/README.en.md)
+[English README](./README.en.md)
 
 FatCat Guardian 是一个基于 Electron 的托盘常驻桌面休息提醒应用。
 
@@ -79,7 +79,7 @@ npm run dist:win
 
 ## 开源协议
 
-本项目采用 `GPL-3.0-only` 协议，见 [LICENSE](/Users/huangjingye/Documents/project/fatcat-guardian/LICENSE)。
+本项目采用 `GPL-3.0-only` 协议，见 [LICENSE](./LICENSE)。
 
 ## 本地开发说明
 
@@ -135,9 +135,9 @@ Electron Builder 官方说明中提到，很多情况下可以在 macOS 或 Linu
 
 详细测试说明见：
 
-- [docs/unsigned-windows-testing.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-windows-testing.md)
-- [docs/release-notes-template.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/release-notes-template.md)
-- [docs/manual-test-checklist.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/manual-test-checklist.md)
+- [docs/unsigned-windows-testing.md](./docs/unsigned-windows-testing.md)
+- [docs/release-notes-template.md](./docs/release-notes-template.md)
+- [docs/manual-test-checklist.md](./docs/manual-test-checklist.md)
 
 ## 开源发布策略
 
@@ -161,7 +161,7 @@ Electron Builder 官方说明中提到，很多情况下可以在 macOS 或 Linu
 
 详细说明见：
 
-- [docs/unsigned-mac-testing.md](/Users/huangjingye/Documents/project/fatcat-guardian/docs/unsigned-mac-testing.md)
+- [docs/unsigned-mac-testing.md](./docs/unsigned-mac-testing.md)
 
 ## Windows 未签名测试包
 
